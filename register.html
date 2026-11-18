@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Реєстрація користувача — Мій особистий блог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Мій особистий блог</a><span>Навчальний вебпроєкт</span></div>
+    <nav aria-label="Основна навігація"><a href="index.html">Вхід</a><a href="register.html" aria-current="page">Реєстрація</a></nav>
+  </header>
+  <main class="registration-page">
+    <form class="registration-form" id="registration-form">
+      <h1>Реєстрація користувача</h1>
+      <div class="form-fields">
+        <label for="surname">Прізвище</label>
+        <input type="text" id="surname" name="surname" autocomplete="family-name" required>
+        <label for="first-name">Ім'я</label>
+        <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+        <label for="login">Логін</label>
+        <input type="text" id="login" name="login" autocomplete="username" required minlength="3">
+        <label for="group">Навчальна група</label>
+        <select id="group" name="group" required>
+          <option value="281">281</option>
+          <option value="282">282</option>
+          <option value="283">283</option>
+        </select>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" autocomplete="new-password" required minlength="6">
+        <label for="confirm-password">Підтвердження паролю</label>
+        <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required minlength="6">
+        <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
+        <button type="submit">Зареєструватись</button>
+      </div>
+    </form>
+  </main>
+  <footer class="site-footer">© Всі права захищені.<br>Навчальна лабораторна робота 1.12</footer>
+  <script src="register.js"></script>
+</body>
+</html>

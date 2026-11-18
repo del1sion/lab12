@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Команди Git — Мій особистий блог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Мій особистий блог</a><span>Навчальний вебпроєкт</span></div>
+    <nav aria-label="Основна навігація"><a href="index.html">Головна</a><a href="register.html">Реєстрація</a></nav>
+  </header>
+  <main class="commands-page">
+    <h1>Основні команди Git</h1>
+    <div class="commands-grid">
+      <section><h2>Створення репозиторію</h2><p>Створити локальний репозиторій:</p><code>git init [project_name]</code><p>Клонувати репозиторій:</p><code>git clone my_url</code>
+        <h2>Перегляд репозиторію</h2><p>Статус файлів:</p><code>git status</code><p>Зміни в робочій папці:</p><code>git diff</code><p>Зміни підготовлених файлів:</p><code>git diff --cached</code><p>Усі зміни від останнього коміту:</p><code>git diff HEAD</code><p>Різниця між двома комітами:</p><code>git diff commit1 commit2</code><p>Історія змін файлу:</p><code>git blame [file]</code><p>Зміни певного коміту:</p><code>git show [commit]:[file]</code><p>Повна історія комітів:</p><code>git log</code><p>Історія конкретного файлу:</p><code>git log -p [file/directory]</code>
+      </section>
+      <section><h2>Робота з гілками</h2><p>Локальні гілки:</p><code>git branch</code><p>Усі гілки:</p><code>git branch -av</code><p>Перехід на гілку:</p><code>git checkout my_branch</code><p>Створення гілки:</p><code>git branch new_branch</code><p>Видалення гілки:</p><code>git branch -d my_branch</code><p>Злиття гілок:</p><code>git checkout branch_b<br>git merge branch_a</code><p>Створення тегу:</p><code>git tag my_tag</code></section>
+      <section><h2>Внесення змін</h2><p>Підготувати файл:</p><code>git add [file]</code><p>Підготувати всі зміни:</p><code>git add .</code><p>Створити коміт:</p><code>git commit -m "commit message"</code><p>Коміт змінених відстежуваних файлів:</p><code>git commit -am "commit message"</code><p>Прибрати файл з індексу:</p><code>git reset [file]</code><p>Скинути зміни до останнього коміту (обережно):</p><code>git reset --hard</code></section>
+      <section><h2>Синхронізація</h2><p>Отримати зміни:</p><code>git fetch</code><p>Отримати та об'єднати зміни:</p><code>git pull</code><p>Отримати зміни з перебазуванням:</p><code>git pull --rebase</code><p>Відправити зміни:</p><code>git push</code><h2>Допомога</h2><p>Довідка Git:</p><code>git command --help</code><p><a href="https://training.github.com/" target="_blank" rel="noopener noreferrer">Офіційні навчальні матеріали GitHub</a></p></section>
+    </div>
+  </main>
+  <footer class="site-footer">© Всі права захищені.<br>Навчальна лабораторна робота 1.12</footer>
+</body>
+</html>
